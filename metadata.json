@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Reloved Pages",
+  "description": "Premium curated preloved books brand, handpicked with care by a mother-son duo in London.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

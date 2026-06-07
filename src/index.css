@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Instrument Sans", system-ui, sans-serif;
+  --font-mono: "Instrument Sans", system-ui, sans-serif;
+  
+  --color-brand-orange-50: #1a0f0a;
+  --color-brand-orange-100: #2c160e;
+  --color-brand-orange-150: #3e1b0d;
+  --color-brand-orange-200: #572511;
+  --color-brand-orange-500: #e85a24;
+  --color-brand-orange-600: #cf4817;
+  --color-brand-orange-700: #aa360f;
+  
+  --color-brand-forest: #e85a24;
+  --color-brand-forest-hover: #ffffff;
+  --color-brand-sage: #a1a1aa;
+  --color-brand-sand: #2d2621;
+  --color-brand-pebble: #121212;
+  
+  --color-brand-charcoal: #ffffff;
+  --color-brand-cream: #000000;
+  
+  --animate-spin-slow: spin 16s linear infinite;
+  --animate-slideDown: slideDown 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-scaleUp: scaleUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-fadeIn: fadeIn 0.4s ease-out forwards;
+  --animate-loadingProgress: loadingBar 2s ease-in-out infinite;
+}
+
+@keyframes loadingBar {
+  0% {
+    left: -40%;
+    width: 40%;
+  }
+  50% {
+    left: 100%;
+    width: 40%;
+  }
+  100% {
+    left: -40%;
+    width: 40%;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  background-color: #000000; /* pitch black background of the site */
+  color: #ffffff; /* crisp white text */
+  overflow-x: hidden;
+}
+
+.playfair-regular {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.support-backdrop {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.reloved-logo-text {
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-weight: normal;
+  color: transparent;
+  -webkit-text-stroke: 1.2px #e85a24;
+  text-shadow: 1px 1px 0px #e85a24;
+}
+
